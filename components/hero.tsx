@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Zap, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Zap, ArrowRight } from "lucide-react";
 
 export function Hero() {
   return (
@@ -15,14 +15,15 @@ export function Hero() {
             AI-Powered Automation
           </Badge>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#F9EFEC] leading-tight">
             Transform Your Business with AI Automation
           </h1>
 
-          <p className="text-lg text-gray-600 max-w-xl">
-            Scale your operations, reduce costs, and increase efficiency with our
-            custom AI automation solutions. We help businesses automate repetitive
-            tasks, streamline workflows, and unlock new levels of productivity.
+          <p className="text-lg text-[#676665] max-w-xl">
+            Scale your operations, reduce costs, and increase efficiency with
+            our custom AI automation solutions. We help businesses automate
+            repetitive tasks, streamline workflows, and unlock new levels of
+            productivity.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -38,11 +39,9 @@ export function Hero() {
 
         {/* Right Side - Hero Image */}
         <div className="relative">
-          <div className="relative h-[500px] rounded-lg overflow-hidden bg-gradient-to-br from-pink-500 via-purple-500 to-pink-600">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-white/20 text-6xl font-bold">🤖</div>
-            </div>
+          <div className="relative h-[500px] rounded-lg    overflow-hidden ">
+            <div className="absolute inset-0  bg-cover bg-center  bg-[url('https://images.unsplash.com/photo-1644165918597-f182dc5e43f8?q=80&w=953&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] "></div>
+            <div className="absolute inset-0 flex items-center justify-center"></div>
           </div>
         </div>
       </div>
@@ -63,6 +62,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
