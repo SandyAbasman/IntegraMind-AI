@@ -49,16 +49,16 @@ export function Hero() {
       {/* Statistics */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 pt-12 border-t border-gray-200">
         <div className="text-center md:text-left">
-          <div className="text-4xl font-bold text-black">500+</div>
-          <div className="text-gray-600 mt-2">Processes Automated</div>
+          <div className="text-4xl font-bold text-[#DA9E8B]">500+</div>
+          <div className="text-[#B3B3B2] mt-2">Processes Automated</div>
         </div>
         <div className="text-center md:text-left">
-          <div className="text-4xl font-bold text-black">85%</div>
-          <div className="text-gray-600 mt-2">Average Cost Reduction</div>
+          <div className="text-4xl font-bold text-[#DA9E8B]">85%</div>
+          <div className="text-[#B3B3B2] mt-2">Average Cost Reduction</div>
         </div>
         <div className="text-center md:text-left">
-          <div className="text-4xl font-bold text-black">24/7</div>
-          <div className="text-gray-600 mt-2">Automated Operations</div>
+          <div className="text-4xl font-bold text-[#DA9E8B]">24/7</div>
+          <div className="text-[#B3B3B2] mt-2">Automated Operations</div>
         </div>
       </div>
     </section>

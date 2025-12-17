@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AutomateFlow - AI-Powered Business Automation",
-  description: "Transform your business with AI automation solutions. Scale operations, reduce costs, and increase efficiency with custom AI agents and automation tools.",
+  title: "IntegraMind AI - AI-Powered Business Automation",
+  description:
+    "Transform your business with AI automation solutions. Scale operations, reduce costs, and increase efficiency with custom AI agents and automation tools.",
 };
 
 export default function RootLayout({

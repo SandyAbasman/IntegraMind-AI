@@ -1,14 +1,17 @@
-import { Badge } from "@/components/ui/badge"
-import { Check } from "lucide-react"
+import { Badge } from "@/components/ui/badge";
+import { Check } from "lucide-react";
 
 export function About() {
   return (
-    <section id="about" className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section
+      id="about"
+      className="container mx-auto px-4 sm:px-6 lg:px-8 py-20"
+    >
       <div className="mb-12">
         <Badge variant="default" className="mb-6">
           About AutomateFlow
         </Badge>
-        <h2 className="text-4xl font-bold text-black mb-8">
+        <h2 className="text-4xl font-bold text-[#F9EFEC] mb-4">
           Pioneering the Future of Business Automation
         </h2>
       </div>
@@ -16,21 +19,22 @@ export function About() {
       <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
         {/* Left Column - Text Content */}
         <div className="space-y-6">
-          <p className="text-lg text-gray-600">
-            We are a team of AI specialists, software engineers, and business strategists
-            dedicated to transforming how businesses operate through intelligent
-            automation solutions.
+          <p className="text-lg text-[#B3B3B2]">
+            We are a team of AI specialists, software engineers, and business
+            strategists dedicated to transforming how businesses operate through
+            intelligent automation solutions.
           </p>
-          <p className="text-lg text-gray-600">
-            Founded in 2019, AutomateFlow has been at the forefront of the AI automation
-            revolution. We combine cutting-edge artificial intelligence with deep business
-            understanding to create solutions that not only automate processes but
-            genuinely transform organizations.
+          <p className="text-lg text-[#B3B3B2]">
+            Founded in 2019, AutomateFlow has been at the forefront of the AI
+            automation revolution. We combine cutting-edge artificial
+            intelligence with deep business understanding to create solutions
+            that not only automate processes but genuinely transform
+            organizations.
           </p>
-          <p className="text-lg text-gray-600">
-            Our approach goes beyond simple task automation. We design intelligent systems
-            that learn, adapt, and evolve with your business, ensuring long-term value and
-            continuous improvement.
+          <p className="text-lg text-[#B3B3B2]">
+            Our approach goes beyond simple task automation. We design
+            intelligent systems that learn, adapt, and evolve with your
+            business, ensuring long-term value and continuous improvement.
           </p>
         </div>
 
@@ -60,6 +64,5 @@ export function About() {
         ))}
       </div>
     </section>
-  )
+  );
 }
-
