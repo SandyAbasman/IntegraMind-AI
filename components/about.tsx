@@ -9,7 +9,7 @@ export function About() {
     >
       <div className="mb-12">
         <Badge variant="default" className="mb-6">
-          About AutomateFlow
+          About Integramind AI
         </Badge>
         <h2 className="text-4xl font-bold text-[#F9EFEC] mb-4">
           Pioneering the Future of Business Automation
@@ -25,7 +25,7 @@ export function About() {
             intelligent automation solutions.
           </p>
           <p className="text-lg text-[#B3B3B2]">
-            Founded in 2019, AutomateFlow has been at the forefront of the AI
+            Founded in 2019, Integramind AI has been at the forefront of the AI
             automation revolution. We combine cutting-edge artificial
             intelligence with deep business understanding to create solutions
             that not only automate processes but genuinely transform
@@ -50,7 +50,7 @@ export function About() {
       </div>
 
       {/* Stats/Features */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-2   lg:grid-cols-4 gap-6">
         {[
           "5+ years of AI automation expertise",
           "200+ successful implementations",
@@ -59,7 +59,7 @@ export function About() {
         ].map((stat) => (
           <div key={stat} className="flex items-start gap-3">
             <Check className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-            <span className="text-gray-700">{stat}</span>
+            <span className="text-[#B3B3B2] ">{stat}</span>
           </div>
         ))}
       </div>

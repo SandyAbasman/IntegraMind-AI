@@ -1,6 +1,12 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const caseStudies = [
   {
@@ -36,16 +42,19 @@ const caseStudies = [
       { metric: "Real-time", label: "Reporting" },
     ],
   },
-]
+];
 
 export function CaseStudies() {
   return (
-    <section id="case-studies" className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section
+      id="case-studies"
+      className="container mx-auto px-4 sm:px-6 lg:px-8 py-20"
+    >
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-black mb-4">Case Studies</h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          See how leading companies have transformed their operations with our AI
-          automation solutions.
+        <h2 className="text-4xl font-bold text-[#F9EFEC] mb-4">Case Studies</h2>
+        <p className="text-lg text-[#B3B3B2] max-w-2xl mx-auto">
+          See how leading companies have transformed their operations with our
+          AI automation solutions.
         </p>
       </div>
 
@@ -53,25 +62,31 @@ export function CaseStudies() {
         {caseStudies.map((study) => (
           <Card key={study.company}>
             <CardHeader>
-              <div className="text-sm text-gray-500 mb-2">{study.industry}</div>
+              <div className="text-sm text-[#B3B3B2] mb-2">
+                {study.industry}
+              </div>
               <CardTitle className="text-2xl">{study.company}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h4 className="font-semibold text-black mb-2">Challenge</h4>
+                <h4 className="font-semibold text-[#F9EFEC] mb-2">Challenge</h4>
                 <CardDescription>{study.challenge}</CardDescription>
               </div>
               <div>
-                <h4 className="font-semibold text-black mb-2">Solution</h4>
+                <h4 className="font-semibold text-[#F9EFEC] mb-2">Solution</h4>
                 <CardDescription>{study.solution}</CardDescription>
               </div>
               <div className="pt-4 border-t border-gray-200">
-                <h4 className="font-semibold text-black mb-4">Results</h4>
+                <h4 className="font-semibold text-[#F9EFEC] mb-4">Results</h4>
                 <div className="grid grid-cols-3 gap-4">
                   {study.results.map((result, idx) => (
                     <div key={idx} className="text-center">
-                      <div className="text-xl font-bold text-black">{result.metric}</div>
-                      <div className="text-xs text-gray-600 mt-1">{result.label}</div>
+                      <div className="text-xl font-bold text-[#DA9E8B]">
+                        {result.metric}
+                      </div>
+                      <div className="text-xs text-[#B3B3B2] mt-1">
+                        {result.label}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -85,6 +100,5 @@ export function CaseStudies() {
         ))}
       </div>
     </section>
-  )
+  );
 }
-

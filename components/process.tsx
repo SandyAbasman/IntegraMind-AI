@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const steps = [
   {
@@ -31,16 +37,22 @@ const steps = [
     description:
       "We continuously monitor and optimize your automation solution. Our support team is available 24/7 to ensure smooth operations and continuous improvement.",
   },
-]
+];
 
 export function Process() {
   return (
-    <section id="process" className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section
+      id="process"
+      className="container mx-auto px-4 sm:px-6 lg:px-8 py-20"
+    >
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-black mb-4">Our Proven Process</h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          We follow a systematic approach to ensure your AI automation project delivers
-          maximum value and exceeds your expectations every step of the way.
+        <h2 className="text-4xl text-[#F9EFEC] font-bold  mb-4">
+          Our Proven Process
+        </h2>
+        <p className="text-lg text-[#B3B3B2] max-w-2xl mx-auto">
+          We follow a systematic approach to ensure your AI automation project
+          delivers maximum value and exceeds your expectations every step of the
+          way.
         </p>
       </div>
 
@@ -48,16 +60,19 @@ export function Process() {
         {steps.map((step, index) => (
           <Card key={step.number}>
             <CardHeader>
-              <div className="text-4xl font-bold text-gray-300 mb-2">{step.number}</div>
+              <div className="text-4xl font-bold text-gray-300 mb-2">
+                {step.number}
+              </div>
               <CardTitle className="text-xl">{step.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-base">{step.description}</CardDescription>
+              <CardDescription className="text-base">
+                {step.description}
+              </CardDescription>
             </CardContent>
           </Card>
         ))}
       </div>
     </section>
-  )
+  );
 }
-

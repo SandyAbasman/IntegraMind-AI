@@ -1,24 +1,27 @@
-"use client"
+"use client";
 
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react";
 
-const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+const handleLinkClick = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string
+) => {
   if (href.startsWith("#")) {
-    e.preventDefault()
-    const targetId = href.substring(1)
-    const element = document.getElementById(targetId)
+    e.preventDefault();
+    const targetId = href.substring(1);
+    const element = document.getElementById(targetId);
     if (element) {
-      const offset = 80
-      const elementPosition = element.getBoundingClientRect().top
-      const offsetPosition = elementPosition + window.pageYOffset - offset
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
 
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
-      })
+      });
     }
   }
-}
+};
 
 const footerLinks = {
   company: [
@@ -39,10 +42,10 @@ const footerLinks = {
     { label: "DataMind Analytics", href: "#products" },
     { label: "WorkflowMaster", href: "#products" },
   ],
-}
+};
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -52,17 +55,18 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="flex h-8 w-8 items-center justify-center bg-black text-white text-sm font-bold">
-                AI
+                IN
               </div>
-              <span className="text-xl font-semibold">AutomateFlow</span>
+              <span className="text-xl font-semibold">Integramind AI</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Transforming businesses through intelligent AI automation solutions.
+              Transforming businesses through intelligent AI automation
+              solutions.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>contact@automateflow.com</span>
+                <span>contact@IntegramindAI.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
@@ -132,10 +136,9 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-          <p>© {currentYear} AutomateFlow. All rights reserved.</p>
+          <p>© {currentYear} Integramind AI. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
