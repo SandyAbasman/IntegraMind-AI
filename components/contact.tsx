@@ -41,7 +41,9 @@ export function Contact() {
       className="container mx-auto px-4 sm:px-6 lg:px-8 py-20"
     >
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-[#F9EFEC] mb-4">Get in Touch</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#F9EFEC] mb-4">
+          Get in Touch
+        </h2>
         <p className="text-lg  text-[#B3B3B2] max-w-2xl mx-auto">
           {
             "Ready to transform your business with AI automation? Let's discuss how we can help you achieve your goals."
@@ -76,7 +78,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-white focus:ring-2 focus:ring-white"
                 />
               </div>
               <div>
@@ -93,7 +95,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-white focus:ring-2 focus:ring-white"
                 />
               </div>
               <div>
@@ -109,7 +111,7 @@ export function Contact() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full px-4 py-2 border border-gray-300 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-white"
                 />
               </div>
               <div>
@@ -126,7 +128,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-white focus:ring-2 focus:ring-white"
                 />
               </div>
               <Button type="submit" className="w-full">

@@ -106,7 +106,7 @@ export function Products() {
       className="container mx-auto px-4 sm:px-6 lg:px-8 py-20"
     >
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-[#F9EFEC] mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#F9EFEC] mb-4">
           Our AI Product Suite
         </h2>
         <p className="text-lg text-[#B3B3B2] max-w-2xl mx-auto">
@@ -126,9 +126,9 @@ export function Products() {
               </div>
             )} */}
             <div
-              className={`h-48 ${product.imageBg}  relative overflow-hidden`}
+              className={`h-40 sm:h-48 ${product.imageBg} relative overflow-hidden`}
             >
-              <div className="absolute inset-0 flex items-center justify-center text-white/20 text-6xl">
+              <div className="absolute inset-0 flex items-center justify-center text-white/20 text-4xl sm:text-6xl">
                 {product.id === "supportbot" && "💬"}
                 {product.id === "sales" && "📈"}
                 {product.id === "datamind" && "📊"}
@@ -162,10 +162,10 @@ export function Products() {
               <div className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-200">
                 {product.metrics.map((metric, idx) => (
                   <div key={idx} className="text-center">
-                    <div className="text-2xl font-bold text-[#DA9E8B]">
+                    <div className="text-lg sm:text-2xl font-bold text-[#DA9E8B]">
                       {metric.value}
                     </div>
-                    <div className="text-xs text-[#B3B3B2] mt-1">
+                    <div className="text-[10px] sm:text-xs text-[#B3B3B2] mt-1 leading-tight">
                       {metric.label}
                     </div>
                   </div>
@@ -177,7 +177,7 @@ export function Products() {
                 <div className="text-2xl font-bold text-[#DA9E8B] mb-4">
                   {product.pricing}
                 </div>
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <Button variant="outline" className="flex-1">
                     Learn More
                   </Button>

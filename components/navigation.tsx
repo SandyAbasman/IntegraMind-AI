@@ -71,7 +71,7 @@ export function Navigation() {
             <div className="flex h-8 w-8 items-center justify-center bg-black text-[#F3DFD8] text-sm font-bold">
               IN
             </div>
-            <span className="text-xl font-semibold text-[#F3DFD8]">
+            <span className="text-base sm:text-xl font-semibold text-[#F3DFD8]">
               Integramind AI
             </span>
           </div>

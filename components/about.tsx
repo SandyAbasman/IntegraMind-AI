@@ -11,9 +11,13 @@ export function About() {
         <Badge variant="default" className="mb-6">
           About Integramind AI
         </Badge>
-        <h2 className="text-4xl font-bold text-[#F9EFEC] mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#F9EFEC] mb-4">
           Pioneering the Future of Business Automation
         </h2>
+        <div className="mt-6 flex gap-4 lg:hidden">
+          <div className="relative h-64 sm:h-80 w-full rounded-lg overflow-hidden bg-cover bg-center bg-[url('/Namdi.jpeg')]"></div>
+          <div className="relative h-64 sm:h-80 w-full rounded-lg overflow-hidden bg-cover bg-center bg-[url('/FullSizeRender.jpg')]"></div>
+        </div>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -39,18 +43,14 @@ export function About() {
         </div>
 
         {/* Right Column - Image */}
-        <div className="relative h-[400px] rounded-lg overflow-hidden bg-gray-100">
-          <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-            <div className="text-center">
-              <div className="text-6xl mb-4">👥</div>
-              <div className="text-sm">Team Photo Placeholder</div>
-            </div>
-          </div>
+        <div className="hidden lg:flex gap-4">
+          <div className="relative h-64 sm:h-80 lg:h-[400px] w-full rounded-lg overflow-hidden bg-cover bg-center bg-[url('/Namdi.jpeg')]"></div>
+          <div className="relative h-64 sm:h-80 lg:h-[400px] w-full rounded-lg overflow-hidden bg-cover bg-center bg-[url('/FullSizeRender.jpg')]"></div>
         </div>
       </div>
 
       {/* Stats/Features */}
-      <div className="grid md:grid-cols-2   lg:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
           "5+ years of AI automation expertise",
           "200+ successful implementations",

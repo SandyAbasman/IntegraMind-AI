@@ -46,7 +46,7 @@ export function Process() {
       className="container mx-auto px-4 sm:px-6 lg:px-8 py-20"
     >
       <div className="text-center mb-16">
-        <h2 className="text-4xl text-[#F9EFEC] font-bold  mb-4">
+        <h2 className="text-3xl sm:text-4xl text-[#F9EFEC] font-bold mb-4">
           Our Proven Process
         </h2>
         <p className="text-lg text-[#B3B3B2] max-w-2xl mx-auto">
@@ -56,7 +56,7 @@ export function Process() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {steps.map((step, index) => (
           <Card key={step.number}>
             <CardHeader>
