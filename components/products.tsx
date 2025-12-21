@@ -28,8 +28,7 @@ const products = [
     ],
     pricing: "Starting at $299/month",
     popular: true,
-    imageBg:
-      "bg-[url('https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]  bg-cover bg-center ",
+    imageBg: "bg-[url('/proposalagent.jfif')]  bg-cover bg-center ",
   },
   {
     id: "sales",
@@ -50,8 +49,7 @@ const products = [
     ],
     pricing: "Starting at $599/month",
     popular: false,
-    imageBg:
-      "bg-[url('https://plus.unsplash.com/premium_photo-1682002193011-9c0d5e58d6b1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center ",
+    imageBg: " bg-[url('/onboardingagent.jfif')] bg-cover bg-center ",
   },
   // {
   //   id: "datamind",
@@ -128,12 +126,12 @@ export function Products() {
             <div
               className={`h-40 sm:h-48 ${product.imageBg} relative overflow-hidden`}
             >
-              <div className="absolute inset-0 flex items-center justify-center text-white/20 text-4xl sm:text-6xl">
+              {/* <div className="absolute inset-0 flex items-center justify-center text-white/20 text-4xl sm:text-6xl">
                 {product.id === "supportbot" && "💬"}
                 {product.id === "sales" && "📈"}
                 {product.id === "datamind" && "📊"}
                 {product.id === "workflow" && "⚙️"}
-              </div>
+              </div> */}
             </div>
             <CardHeader>
               <CardTitle className="text-2xl">{product.title}</CardTitle>
