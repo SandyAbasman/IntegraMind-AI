@@ -24,22 +24,16 @@ export function About() {
         {/* Left Column - Text Content */}
         <div className="space-y-6">
           <p className="text-lg text-[#B3B3B2]">
-            We are a team of AI specialists, software engineers, and business
-            strategists dedicated to transforming how businesses operate through
-            intelligent automation solutions.
+          We are a team of AI specialists, software engineers, and business strategists dedicated to transforming how businesses operate through intelligent automation solutions..
           </p>
           <p className="text-lg text-[#B3B3B2]">
-            Founded in 2019, Integramind AI has been at the forefront of the AI
-            automation revolution. We combine cutting-edge artificial
-            intelligence with deep business understanding to create solutions
-            that not only automate processes but genuinely transform
-            organizations.
+          Founded in 2025, we have been at the forefront of the AI automation revolution. We combine cutting-edge artificial intelligence with deep business understanding to create solutions that not only automate processes but genuinely transform organizations.
           </p>
           <p className="text-lg text-[#B3B3B2]">
-            Our approach goes beyond simple task automation. We design
-            intelligent systems that learn, adapt, and evolve with your
-            business, ensuring long-term value and continuous improvement.
+          Our approach goes beyond simple task automation. We design intelligent systems that learn, adapt, and evolve with your business, ensuring long-term value and continuous improvement.
+
           </p>
+         
         </div>
 
         {/* Right Column - Image */}

@@ -16,7 +16,7 @@ export function Hero() {
           </Badge>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#F9EFEC] leading-tight">
-            Transform Your Business with AI Automation
+          Transform Your Business with Intelligent AI Automation
           </h1>
 
           <div className="relative lg:hidden">
@@ -27,10 +27,7 @@ export function Hero() {
           </div>
 
           <p className="text-lg text-[#676665] max-w-xl">
-            Scale your operations, reduce costs, and increase efficiency with
-            our custom AI automation solutions. We help businesses automate
-            repetitive tasks, streamline workflows, and unlock new levels of
-            productivity.
+          We build custom AI automation solutions with powerful web platforms that reduce labor costs, increase revenue, and save valuable time so you can focus on what matters most: growing your business.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

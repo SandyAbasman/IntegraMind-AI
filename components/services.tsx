@@ -23,7 +23,7 @@ const services = [
     features: [
       "Natural Language Processing",
       "Multi-platform Integration",
-      "Custom Training",
+      "Custom Training & Tuning",
     ],
   },
   {
@@ -31,7 +31,7 @@ const services = [
     title: "Process Automation",
     description:
       "Automate repetitive business processes, from data entry to document processing and approvals.",
-    features: ["Workflow Design", "API Integrations", "Error Handling"],
+    features: ["Workflow Design & Optimization", "Seamless API Integration", "Robust Error Handling & Logging"],
   },
 
   {
@@ -39,7 +39,7 @@ const services = [
     title: "Data Processing & Analysis",
     description:
       "Transform raw data into actionable insights with automated data collection, cleaning, and analysis.",
-    features: ["Data Mining", "Predictive Analytics", "Real-time Processing"],
+    features: ["Intelligent Data Mining", "Predictive Analytics & Reporting", "Real-time Processing"],
   },
   // {
   //   icon: Mail,
@@ -75,9 +75,7 @@ export function Services() {
           Our AI Automation Services
         </h2>
         <p className="text-lg text-[#B3B3B2] max-w-2xl mx-auto">
-          We provide comprehensive AI automation solutions that transform how
-          your business operates, from simple task automation to complex
-          intelligent systems.
+        We provide comprehensive digital solutions that transform how your business operates, from intelligent automation to high-performance web development.
         </p>
       </div>
 
